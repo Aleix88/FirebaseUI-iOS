@@ -252,7 +252,7 @@ static NSString *const kNextButtonAccessibilityID = @"NextButtonAccessibilityID"
   } else if (indexPath.row == FUIPhoneEntryRowPhoneNumber) {
     cell.accessoryType = UITableViewCellAccessoryNone;
     cell.label.text = FUIPhoneAuthLocalizedString(kPAStr_PhoneNumber);
-    cell.textField.enabled = YES;
+    cell.textField.enabled = NO;
     cell.textField.clearButtonMode = UITextFieldViewModeWhileEditing;
     cell.textField.placeholder = FUIPhoneAuthLocalizedString(kPAStr_EnterYourPhoneNumber);
     cell.textField.delegate = self;
